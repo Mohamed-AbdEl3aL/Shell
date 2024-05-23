@@ -1,11 +1,11 @@
 ﻿menu(type="taskbar" vis=key.shift() or key.lbutton() pos=0 title=app.name image=\uE249)
 {
-	item(title="config" image=\uE10A cmd='"@app.cfg"')
-	item(title="manager" image=\uE0F3 admin cmd='"@app.exe"')
-	item(title="directory" image=\uE0E8 cmd='"@app.dir"')
-	item(title="version\t"+@app.ver vis=label col=1)
-	item(title="docs" image=\uE1C4 cmd='https://nilesoft.org/docs')
-	item(title="donate" image=\uE1A7 cmd='https://nilesoft.org/donate')
+	item(title="Konfiguration" image=\uE10A cmd='"@app.cfg"')
+	item(title="Manager" image=\uE0F3 admin cmd='"@app.exe"')
+	item(title="Ordner" image=\uE0E8 cmd='"@app.dir"')
+	item(title="Version\t"+@app.ver vis=label col=1)
+	item(title="Docs" image=\uE1C4 cmd='https://nilesoft.org/docs')
+	item(title="Spenden" image=\uE1A7 cmd='https://nilesoft.org/donate')
 }
 menu(where=@(this.count == 0) type='taskbar' image=icon.settings expanded=true)
 {
@@ -13,7 +13,7 @@ menu(where=@(this.count == 0) type='taskbar' image=icon.settings expanded=true)
 	{
 		item(title='Paint' image=\uE116 cmd='mspaint')
 		item(title='Edge' image cmd='@sys.prog32\Microsoft\Edge\Application\msedge.exe')
-		item(title='Calculator' image=\ue1e7 cmd='calc.exe')
+		item(title='Rechner' image=\ue1e7 cmd='calc.exe')
 		item(title=str.res('regedit.exe,-16') image cmd='regedit.exe')
 	}
 	menu(title=title.windows image=\uE1FB)
